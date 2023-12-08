@@ -1,0 +1,302 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>2023课程设计--任务书 | Code之旅</title><meta name="author" content="windstar"><meta name="copyright" content="windstar"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="哈尔滨工业大学（威海）计算机科学与工程程序设计实践任务书    班  号 2204104 学  号 2022211045 姓  名 赵文溥      院  系 计算机科学与技术学院 专  业 计算机科学与技术       同组人员姓名          任务书评分          任务题目  火车换乘参考网站          问题阐述与分析（不少于1500字）  1.   问题背景及应用意义">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2023课程设计--任务书">
+<meta property="og:url" content="https://www.zwp2004.cn/2023/12/08/2023%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1-%E4%BB%BB%E5%8A%A1%E4%B9%A6/index.html">
+<meta property="og:site_name" content="Code之旅">
+<meta property="og:description" content="哈尔滨工业大学（威海）计算机科学与工程程序设计实践任务书    班  号 2204104 学  号 2022211045 姓  名 赵文溥      院  系 计算机科学与技术学院 专  业 计算机科学与技术       同组人员姓名          任务书评分          任务题目  火车换乘参考网站          问题阐述与分析（不少于1500字）  1.   问题背景及应用意义">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/xds10/image@main/blog-img/default_bg7.jpg">
+<meta property="article:published_time" content="2023-12-08T08:42:48.000Z">
+<meta property="article:modified_time" content="2023-12-08T08:43:57.129Z">
+<meta property="article:author" content="windstar">
+<meta property="article:tag" content="课程设计">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/xds10/image@main/blog-img/default_bg7.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.zwp2004.cn/2023/12/08/2023%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1-%E4%BB%BB%E5%8A%A1%E4%B9%A6/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '2023课程设计--任务书',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-12-08 16:43:57'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/xds10/image@main/blog-img/avatar.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">8</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/xds10/image@main/blog-img/default_bg7.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Code之旅"><span class="site-name">Code之旅</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">2023课程设计--任务书</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-12-08T08:42:48.000Z" title="Created 2023-12-08 16:42:48">2023-12-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-12-08T08:43:57.129Z" title="Updated 2023-12-08 16:43:57">2023-12-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/">课程设计</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word count:</span><span class="word-count">2.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading time:</span><span>6min</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="2023课程设计--任务书"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong>哈尔滨工业大学（威海）计算机科学与工程程序设计实践任务书</strong></p>
+<table>
+<thead>
+<tr>
+<th>班  号</th>
+<th>2204104</th>
+<th>学  号</th>
+<th>2022211045</th>
+<th>姓  名</th>
+<th>赵文溥</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>院  系</td>
+<td>计算机科学与技术学院</td>
+<td>专  业</td>
+<td>计算机科学与技术</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>同组人员姓名</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>任务书评分</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>任务题目  <strong>火车换乘参考网站</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>问题阐述与分析（不少于1500字）  <strong>1.</strong>   <strong>问题背景及应用意义</strong>     由于火车线路的布局和运营安排，火车线路通常由多个区段组成，每个区段之间有不同的车次和时刻表安排。当旅客需要从起点站到达目的地时，有时需要在中途站点进行换乘，以继续前行。  火车换乘参考网站的问题背景与应用意义在于为乘客提供准确、全面、实时的换乘信息，帮助他们更好地规划和安排火车旅行。      应用意义分为以下几点：  (1)换乘信息整合：火车换乘参考网站将各个车站的时刻表、车次信息、换乘方案等整合到一个平台上，提供了一个集中查询的渠道。乘客可以通过一个网站获取到所需的换乘信息，避免了需要查询多个网站或咨询多个渠道的麻烦。  (2)换乘方案推荐：火车换乘参考网站通常会根据乘客提供的出发站和目的地，智能地推荐最佳的换乘方案。这可以帮助乘客节省时间和费用，选择最优的换乘方式。  (3)详细信息展示：火车换乘参考网站通常会提供详细的换乘信息，包括中转站点、换乘时间、换乘路线等，帮助乘客更好地了解换乘流程和行程安排。  综上所述，火车换乘参考网站的问题背景与应用意义在于为乘客提供便捷、准确、实时的换乘信息，帮助他们更好地规划和安排火车换乘行程，节省时间和费用，提高出行的便利性和舒适度。           <strong>2.</strong>  <strong>所要解决的实际应用问题及难点</strong>  (1)数据准确性：确保提供的火车时刻表、车次信息、换乘方案等数据准确无误，需要与铁路部门或相关权威机构进行数据对接和更新，以及处理数据的实时性和准确性。由于技术不足以12306车次数据，该程序将使用模拟数据替代真实车次数据。  (2)换乘算法：设计智能的换乘算法，能够根据用户输入的出发站和目的地，计算出最优的换乘方案，考虑到换乘时间、中转站点、车次间隔等因素，提供用户友好的换乘建议。  (3)用户体验：提供直观友好的用户界面，使用户能够快速、方便地查询到所需的换乘信息，同时考虑多种用户需求和使用场景，提供个性化的服务和建议。  (4)多样化需求：考虑到用户可能有不同的出行需求，需要提供多种换乘方案和选择，包括最快捷路线、最经济路线等，同时能够满足不同用户的个性化需求。     <strong>3.</strong>  <strong>计划实施方案</strong>（含功能模块划分、算法流程设计等）  前端：  采用Vue框架，分为以下两个模块：  (1)查询模块：包括三个输入框和查询按钮。三个输入框分别用于填写出发 地、目的地、出发日期，用户可以点击查询按钮进行查询方案  (2)数据展示模块：数据展示模块负责将查询结果以直观的方式展示给用户。它包括换乘方案的列表，显示换乘路线、中转站点、车次信息、出发时间、到达时间等。此外，还可以提供筛选和排序功能，以便用户根据自己的需求进行选择     后端：  采用Spring Boot框架，分为以下四部分：  Controller层：接受前端传来的参数，并将其解析，调用service层的接口进行  处理参数，并将结果返回给前端  Pojo层：定义一个实体类，用于封装数据，作为方法参数或返回值进行数据传输  Service层：定义一个接口，接收参数后调用算法模块，来计算出可行换乘方 案，对其进行排序后返回给Controller层  Exception层：定义异常，当程序产生异常时抛出异常代码，以便分析问题     算法：  考虑到实际情况，火车换乘次数不超过3次，最多乘坐4趟列车，可对最短路算法进行限制。  将火车始发站与其途径站视为一条单向边，由先经过的站点指向后经过的站点，每个站点视为一个点，构建成一个图。对于每个请求，将出发地视为起点，目的地视为终点。换乘最短路算法采用双向BFS算法，从起点出发，进行广度优先搜索（BFS），深度为2层。将搜索到的站点存储。  再新建一个图，将火车终点站与其途径站视为一条单向边，由后经过的站点指向先经过的站点，将目的地视为起点，出发地视为终点，从起点出发，进行广度优先搜索（BFS），深度为2层。将搜索到的站点进行存储。  将两次搜索到的站点进行比较，若有相同或为起点或终点，即视为有一条可行的换乘路径，存储起来。对于所有可行的路径，按不同的关键词（时间最短，路程最短，价格最低）进行排序，输出到文件中。     模拟数据:  <img src="file:///C:/Users/windstar/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img">     <strong>4.</strong>  <strong>拟采用的数据结构及算法等</strong>  数据结构：   链表：对于每个点，以车次来构造边，用链表来存储  图：火车路线图可以用图来表示，火车站为其中的点，车次为节点之间的边。  这样就可以采取图的搜索方法BFS来搜索最短路。  数组：存储路线，列车车次，站点信息等信息  哈希表：快速存储和查询车站信息，列车信息等，提高数据检索效率     算法：  双向BFS：计算最短换乘路线，考虑到换乘时间、中转站点、车次间隔等因素，以提供用户换乘方案  排序算法：将双向BFS搜索出来的换乘路线按不同的关键字（换乘次数，时间等）进行排序。</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>工作量（阐述所选任务的工作量体现，包括具体的设计模块及预期代码量等）  前端部分：   1.查询模块：这个模块主要负责接收用户输入的出发地、目的地和出发日期，并将其传递给后端进行处理。工作量相对较小，预计代码量约为100-200行。   2.数据展示模块：这个模块负责将后端返回的查询结果以直观的方式展示给用户，包括换乘方案列表、路线信息、中转站点、车次信息等。同时，还需要实现筛选和排序功能。这个模块的工作量较大，预计代码量约为300-500行。     后端部分：  1.Controller层：这个层负责接收前端传来的参数，并进行解析和处理，预计代码量约为100-200行。  2.Pojo层：这个层主要负责定义一个实体类，需要定义具体参数和方法getter和setter，以及一些辅助方法equals，hashCode，toString等，预计代码量约为100行。  3.Service层：这个层负责定义接口，进行文件操作，并调用算法模块来计算可行的换乘方案，然后对结果进行排序并返回给Controller层。工作量较大，预计代码量约为200-300行。     数据模拟：  随机函数生成列车信息，包含票价，里程，中转站等信息，预计代码量100行。     算法：  使用文件输入或调用api读取火车车次信息，对其建立两个有向图，并分别进行双向BFS查找换乘信息，再进行排序，预计代码量200-300行。</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>工作计划安排（要明确中期检查及结题验收时的完成目标）  1.学习并研究各部分的语言逻辑、算法思路等，将后端的部分基本完善，并完成基本的前端界面     2.在中期已完成内容的基础上，进一步完善网页，并将前、后端的部分进行整合，形成一个功能基本完备的火车换乘参考网站的实际应用界面。</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>同组人员分工安排（若自行成组则写“独立完成”；多人同组则要分工明确，清晰列出每人所承担的具体任务安排）     独立完成</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>说明：每个课设小组需独立完成任务书，内容要完整、分工要明确；各组项目尽量不重复。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://www.zwp2004.cn">windstar</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://www.zwp2004.cn/2023/12/08/2023%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1-%E4%BB%BB%E5%8A%A1%E4%B9%A6/">https://www.zwp2004.cn/2023/12/08/2023%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1-%E4%BB%BB%E5%8A%A1%E4%B9%A6/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/">课程设计</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/xds10/image@main/blog-img/default_bg7.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/12/08/2023%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1-%E6%A8%A1%E6%8B%9F%E6%95%B0%E6%8D%AE/" title="2023课程设计--模拟数据"><img class="cover" src="https://cdn.jsdelivr.net/gh/xds10/image@main/blog-img/default_bg13.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">2023课程设计--模拟数据</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2023/12/08/2023%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1-%E6%A8%A1%E6%8B%9F%E6%95%B0%E6%8D%AE/" title="2023课程设计--模拟数据"><img class="cover" src="https://cdn.jsdelivr.net/gh/xds10/image@main/blog-img/default_bg13.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-12-08</div><div class="title">2023课程设计--模拟数据</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/xds10/image@main/blog-img/avatar.gif" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">windstar</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xds10"><i></i><span>🛴前往小家...</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xds10" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2134182153@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content"><center>主域名：<br><a href="https://www.zwp2004.cn"><b><font color="#5ea6e5">zwp2004.cn</font></b></a></center></div></div><div class="sticky_layout"></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By windstar</div><div class="footer_custom_text">Have a nice day.<p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://beian.miit.gov.cn"><img src=https://img.shields.io/badge/吉ICP备2023007446号-2-e1d492?style=flat&amp;></a> </p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">简</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script id="ribbon" size="150" alpha='0.6' zIndex="-1" src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var qweather_key = 'b16a1fa0e63c46a4b8f28abfb06ae3fe';
+  var gaud_map_key = 'e2b04289e870b005374ee030148d64fd&s=rsv3';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '113.34532,23.15624';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><!-- hexo injector body_end end --></body></html>
